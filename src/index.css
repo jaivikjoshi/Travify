@@ -1,13 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.date{
+  position: absolute;
+  top: 50px;
+  right: 13vh;
+  z-index: 2;
+}
+
+.home-container{
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:  center;
+  gap: 30px;
+}
+
+.featured{
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+.featuredItem{
+  position: relative;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 250px;
+}
+
+.featuredImg{
+  width: 100%;
+  object-fit: cover;
+}
+
+.featuredTitles{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin-top: 0;
+}
+
+.homeTitle{
+  width: 1024px;
+  font-size: 20px;
+  color: white;
+}
+
+.pListTitles{
+  color: white;
+}
+
+.pList{
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pListItem{
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.pListImg{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.pListTitles>h1{
+  font-size: 18px;
+}
+
+.pListTitles>h2{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.fpItem{
+  color: white;
+}
+
+.fp{
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.fpItem{
+  flex: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fpImg{
+  width: 100%;
+  object-fit: cover;
+}
+
+.fpName{
+  font-weight: bold;
+}
+
+
+.fpCity{
+  font-weight: 300;
+}
+
+.fpPrice{
+  font-weight: 500;
+}
+
+.fpRating>button{
+  background-color: rgb(135, 227, 192);
+  color: black;
+  border: none;
+  padding: 3px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.fpRating>span{
+  font-size: 14px;
 }
